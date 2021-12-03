@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+}
+
+img { display: block; width: 100%; }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+.inner { max-width: 1200px; margin: 0 auto; }
+
+.control {
+    cursor: pointer;
+    color: white;
+    transition: background 150ms;
+    max-width: 200px;
+    padding: 0 20px;
+    border: none;
+    line-height: 50px;
+    border: 1px solid currentColor;
+    margin-bottom: 20px;
+}
+
+.control:hover {
+    color: #ccc;
+    background: #fff;
+}
+
+.control[data-filter=".spring"] {
+    color: #d595aa;
+}
+
+.control[data-filter=".summer"] {
+    color: #91e6c7;
+}
+
+.control[data-filter=".fall"] {
+    color: #ffd390;
+}
+
+.control[data-filter=".winter"] {
+    color: #5ecdde;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+.weather-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.weather-list .mix {
+    border-top: .5rem solid currentColor;
+    margin: 0 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.weather-list .mix img {
+  transition: transform 0.3s ease;
+}
+.weather-list .mix:hover img {
+  transform: scale(1.1);
+}
+
+.weather-list .mix.spring {
+    color: #d595aa;
+}
+
+.weather-list .mix.summer {
+    color: #91e6c7;
+}
+
+.weather-list .mix.fall {
+    color: #ffd390;
+}
+
+.weather-list .mix.winter {
+    color: #5ecdde;
+}
+
+/* 3 Columns */
+.weather-list .mix {
+    /* flex: 0 1; */
+    flex-basis: calc(33.33% - 10px);
+}
+
+/* 2 Columns */
+@media screen and (max-width: 768px) {
+    .weather-list .mix {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* 1 Columns */
+@media screen and (max-width: 520px) {
+    .weather-list .mix{
+        flex-basis: calc(100% - 10px);
+    }
+}
+
