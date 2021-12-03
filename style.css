@@ -34,19 +34,19 @@ img { display: block; width: 100%; }
 }
 
 .control[data-filter=".spring"] {
-    color: #d595aa;
+    color: #ff0055;
 }
 
 .control[data-filter=".summer"] {
-    color: #91e6c7;
+    color: #00ffa2;
 }
 
 .control[data-filter=".fall"] {
-    color: #ffd390;
+    color: #ff9900;
 }
 
 .control[data-filter=".winter"] {
-    color: #5ecdde;
+    color: #00ddff;
 }
 
 /* Target Elements
@@ -72,19 +72,19 @@ img { display: block; width: 100%; }
 }
 
 .weather-list .mix.spring {
-    color: #d595aa;
+    color: #ff0055;
 }
 
 .weather-list .mix.summer {
-    color: #91e6c7;
+    color: #00ffa2;
 }
 
 .weather-list .mix.fall {
-    color: #ffd390;
+    color: #ff9900;
 }
 
 .weather-list .mix.winter {
-    color: #5ecdde;
+    color: #00ddff;
 }
 
 /* 3 Columns */
